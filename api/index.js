@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
 require('dotenv').config();
-require('./Models/db'); // Database connection setup
+require('../Models/db'); // Database connection setup
 const PORT = process.env.PORT || 5000;
-const TaskRouter = require('./Routes/TaskRouter');
+const TaskRouter = require('../Routes/TaskRouter');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
