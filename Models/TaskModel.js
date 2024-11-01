@@ -27,6 +27,7 @@ const TaskModel = sequelize.define('Task', {
         allowNull: false, // Required
     }
 }, {
+    tableName: 'tasks',
     timestamps: false // Disable timestamps if not needed
 });
 
